@@ -1,0 +1,310 @@
+/*Default styles*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*Add a small margin to the bottom of the NavMenu*/
+nav{
+    margin: 0 0 0.2vw 0 ;
+    background:none;
+    border: 1px solid #FFFFFF;
+    border-radius; 1vw;
+}
+/*Center elements in all sections*/
+.section{
+    width:100%;
+    align-items: center;
+}
+*/
+/*Display menu links(<li>) side-by-side*/
+li{
+    display: inline;
+    list-style: circle;
+}
+/*Add margin around paragraph*/
+p{
+    margin: 2%;
+    font-size: 1rem;
+}
+/*display norfolf island name heading*/
+.norfolkIsland{
+    display: none;
+}
+/*Heading 1 appearance*/
+h1{
+    display: inline;
+    text-align: center;
+    color:      #26B3FF;
+    font-size: 250%;
+}
+/*Heading 2 appearance*/
+h2{
+    display:inherit;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2rem;
+    margin: 1%;
+}
+h3{
+    display:inherit;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 1%;
+}
+/*Title is displayed at the top of the Mobile and Tablet views, to the right of the sidenav button*/
+.title{
+    width: 100%;
+    display: inline;
+    align-content: center;
+}
+/* Style the navigation menu */
+.DESKTOP{
+    height:180px;
+    display: none;
+    cursor: default; 
+    box-shadow: 5px 5px 5px #333333;
+    border-radius; 1vw;
+}
+/*Behaviours and attributes of the sidenav*/
+.sidenav {
+    height: auto;
+    width: 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    color: #FFFFFF;
+    background-color: #0A2D40;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+/*Set borders and padding for sidebar*/
+    padding-top: 60px;
+    border-radius: 0 1vw 1vw 1vw;
+}
+/*Set the dimensions of the links on the sidebar menu*/
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #FFFFFF;
+  display: block;
+  transition: 0.3s;
+}
+/*Change the background of sidebar links when hovered*/
+.sidenav a:hover {
+  color: #AAAAAA;
+}
+/*Set the attributes and appearance of the sidenav and its "close" button*/
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 2vw;
+  font-size: 3rem;
+  margin-left: 10vw;
+}
+/*Set the appearance of the sidebar menu trigger/button*/
+#trigger{  
+    display: inline;
+    height: 75px;
+    width: 75px;
+    font-size:50px;
+    cursor:pointer;
+    background-color: #1D86BF;
+    border-radius: 1vw;
+    color: #FFFFFF;
+}
+
+/*Set the size and appearance of the logo at the top of the mobile and tablet views*/
+.logo{
+    height: 70px;
+    width: 100px;
+    vertical-align:top;  
+    width:80px;
+    border: 1px solid #FFFFFF;
+    float: right;
+}
+/*end of navigation styling*/
+/*Set the appearance of the body of the document*/
+body{
+    overflow-x: hidden;
+    background: none;
+/*    width: 960px;*/
+}
+/*Set the pages appearance and dimensions*/
+.page{
+    border-radius: 1vw;
+    top:0;
+    bottom:100%;
+    left:0;
+    z-index:1;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*Set the background-color of feature1 and feature5*/
+.feature1, .feature5{
+    background-color:#1D86BF;
+}
+/*Set the background-color of feature2*/
+.feature2, .feature3{
+    background-color:#23A9F0;
+}
+/*Set the background-color of feature3*/
+.feature4{
+    background-color:#26B3FF;
+}
+/*Create space around features 1,2,3,4,5, images and round corners and create a subtle border*/
+.feature1, .feature2, .feature3, .feature4, .feature5, img{
+    border-radius: 1vw;
+    width:99.5%;
+    margin: 0.25% 0.25% 0.5% 0.25%;
+    border: 1px solid #FFFFFF;
+        
+}
+/*Set the appearance of the footer area.*/
+footer{
+    background-color: #1D86BF;
+    border-radius: 1vw 1vw 0 0;
+    box-shadow: 5px 5px 5px #333333;
+    height: 100px;
+    border: 1px solid #FFFFFF;
+    margin: 1vw 0 0 0;
+    width:100%;
+}
+/*Set appearance of images nested inside paragraphs, exclusive of .pimgL and .pimgR*/
+.pimg{
+    width: 99.5%;
+    height: auto;
+    display: inline;
+    border: 1px solid #FFFFFF;
+}
+/*Set widths of features*/
+.feature1, .feature2, .feature3, .feature4, .feature5{
+    width:100%;
+}
+/*-----------------------------------------------------------------------------------*/
+/*Tablet Styles----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+@media only screen and (min-width:701px) and (max-width: 1000px){
+/*Make features 1,2,3,4 half-width in tablet view*/
+    .feature1,.feature2,.feature3,.feature4{
+        width: 49.5%;
+        padding: 2vw;
+    }
+/*Display the logo on mobile and tablet view inline*/
+    .logo{
+        display:inline-flex;
+    }
+/*Make the <h1> elements in the NavMenu display side-by-side*/
+    h1{
+        display: inline;
+        color:  #26B3FF;
+    }
+/*Make the right-aligned(.pimgR) images 49% width, instead of 100%*/
+    .pimgR{
+        float: right;
+        width: 49%;
+        margin: 1%;
+    }
+/*Make the left-aligned(.pimgL) images 49% width, instead of 100%*/
+    .pimgL{
+        float: left;
+        width: 49%;
+        margin: 1%;
+    }
+/*hide norfolf island name heading*/
+    .norfolkIsland{
+        display: inline;
+    }
+/*Make logo/nav area lightblue*/
+    
+}
+/*-----------------------------------------------------------------------------------*/
+/*Desktop Styles---------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1001px){
+/*Set the page width to 1000px in desktop mode and centre the page, also create rounded corners*/
+    body{
+        width: 1000px;
+        margin: auto;
+    }
+    .sidenav{
+    display: none;
+    visibility: hidden;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+/*Set the middle 3 feature elements to be displayed as columns between feature1 and feature5.*/
+    .feature2, .feature3, .feature4{
+        width:32.5%;
+/* Set the top and bottom feature elemnts to be full page width when displayed in the desktop view*/    
+    }
+    .feature1, .feature5{
+        width: 100%;
+    }
+/*Create a small margin for each feature element and create a box shadow to give a 3 dimensional effect.*/
+    .feature1, .feature2, .feature3, .feature4, .feature5{
+        margin: 0.41%;
+        box-shadow: 5px 5px 5px #333333;
+    }
+/*pimgR is used to denote an image which is aligned to the right with an image to its immediate left.*/
+    .pimgR{
+        float: right;
+        width: 49%;
+        margin: 1%;
+    }
+/*pimgL is used to denote an image which is aligned to the left, with a paragraph of text to its immediate right.*/
+    .pimgL{
+        float: left;
+        width: 49%;
+        margin: 1%;
+    }
+/*DESKTOP is the menu used when a desktop or device wider than 1000 pixels is being used.*/    
+    .DESKTOP{
+        display: block;
+        background-color: #1D86BF;
+    }
+/*LPTPMBL is the menu which is made visible when a mobile or tablet device is used.*/
+    .LPTPMBL{
+        display: none;
+        visibility: hidden;
+    }
+/*Set appearance of the unordered-list(NavMenu) and display links inline.*/
+    ul{
+        height: 100%;
+        display: inline;
+        display: none;
+        border-radius: 1vw;
+    }
+/*Set appearance for the <figure> elements which make up the menu links on the desktop view.*/
+    figure{
+        display: inline;
+        float: left;
+        text-align: center;
+        width:24%;
+        height: 130px;
+        margin: 0.5%;
+    }
+/*Set the appearance of the images nested in the <figure> elements in the nav menu.*/
+        nav img{
+        width:100%;
+        height:100%;
+        display: inline;
+    }
+/*Set <figcaption> appearance, which make up the text component of the menu links in the desktop view.*/    
+        figcaption{
+        display:inline;
+        color: #FFFFFF;
+        font-size: 2rem;
+        vertical-align: top;
+    }
+    /*Display the links in the menu inline.*/
+    a{
+        display: inline;   
+    }
+}
+
+    
