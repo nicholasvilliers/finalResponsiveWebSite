@@ -1,94 +1,95 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
     <head>
         <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, intial-scale=1.0, maximum-scale=1.0">
-        <title>Norfolk Island - Home</title>
+        <title>Norfolk Island - Locations</title>
         <link rel="stylesheet" href="assets/styles/reset.css"/>
         <link rel="stylesheet" href="assets/styles/styles.css"/>
+        <!--The following stylesheet is the stylesheeet to embed the fonts, which I have chosen to use for this website.-->
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet"> 
     </head>
     <body>
         <header>    
         </header>
         <nav>
-            <div class="menu">
-                <ul class="DESKTOP">
+            <div class="DESKTOP">
+                <section class="social">
+                    <h1>Norfolk Island - Locations</h1>
+                    <!--Begin menu links-->
+                    <ul>
                         <li>
-                            <a href="index.html">
-                                <figure>
-                                    <img alt="kingston pier" src="assets/img/norfolk-island-6.jpg">
-                                    <figcaption>Home</figcaption>
-                                </figure>
-                            </a>
+                            <a href="https://www.facebook.com/2899NorfolkIsland/"><img src="assets/img/Facebook%20icon%2002.png" alt="The logo for facebook"></a>
                         </li>
                         <li>
-                            <a href="description.html">
-                                <figure>
-                                    <img alt="Emily Bay - General" src="assets/img/norfolk-island-7.jpg">
-                                    <figcaption>Description</figcaption>
-                                </figure>
-                            </a>
+                            <a href="https://www.instagram.com/norfolk.island/"><img src="assets/img/instagram%20icon.png" alt="The logo for instagram."></a>
                         </li>
                         <li>
-                            <a href="history.html">                           
-                                <figure>
-                                    <img alt="Cemetary" src="assets/img/norfolk-island-9.jpg">
-                                    <figcaption>History</figcaption>
-                                </figure>
-                            </a>                        
+                            <a href="https://www.youtube.com/user/norfolkislandtourism"><img src="assets/img/1024px-Youtube_icon.svg.png" alt="The logo for youtube."></a>
                         </li>
                         <li>
-                            <a href="locations.html">
-                                <figure>
-                                    <img  alt="Looking towards soldier barracks and Commissariat Store - general" src="assets/img/norfolk-island-10.jpg">           <figcaption>Locations</figcaption>
-                                </figure>
-                            </a>
+                            <a href="https://twitter.com/norfolkisland"><img src="assets/img/twitter%20icon.png" alt="The logo for twitter."></a>
                         </li>
                     </ul>
-                <div class="LPTPMBL">
-                    <!-- start laptop/mobile nav-->
-                    <div class="title">
-                        <button id="trigger" class onclick="openNav()">&#9776;</button>
-                        <h1 class="norfolkIsland">Norfolk Island - </h1><h1>Locations</h1>
-                        <img alt="Norfolk Island Flag" class ="logo" src="assets/img/150px-Flag_of_Norfolk_Island.png">
-                    </div>
-                    <script>
-                        function openNav() {
-                        document.getElementById("mySidenav").style.width = "20rem";
-                        }
-                        function closeNav() {
-                        document.getElementById("mySidenav").style.width = "0";
-                        }
-                    </script>
-                    <div id="mySidenav" class="sidenav">
-                    <!--make this a UL, and wrap within an additional <nav> tag-->
-                    <ul>
-                        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>  
-                        <li><a href="index.html">Home</a></li>  
-                        <li><a href="description.html">Description</a></li>  
-                        <li><a href="history.html">History</a></li>  
-                        <li><a href="locations.html">Locations</a></li>    
-                    </ul>    
-                    </div>
-                    <!-- end laptop/mobile nav-->      
+                </section>
+                <!--The next section serves solely to provide an image for the nav menu-->
+                <div class="mainImage">
+                    <img src="assets/img/norfolk-island-27.jpg" alt="A wide panoramic view of the Norfolk coastline, looking out from a boardwalk."> 
                 </div>
-            </div>    
+                <section class="menu">
+                <ul>
+                    <li>
+                        <h2><a href="index.html">Home</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="description.html">Description</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="history.html">History</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="locations.html">Locations</a></h2>
+                    </li>                         
+                </ul> 
+                </section>
+            </div>
+            <!--Begin laptop/mobile hamburger menu-->
+            <aside class="LPTPMBL">
+                <!-- start laptop/mobile nav-->
+                <section class="title">
+                    <button id="trigger" class onclick="openNav()">&#9776;</button>
+                    <h2 class="norfolkIsland">Norfolk Island - </h2><h2>Locations</h2>
+                    <img alt="Shown is a cartoon version of the Norfolk Island flag" class ="logo" src="assets/img/150px-Flag_of_Norfolk_Island.png">
+                </section>
+                <script>
+                    function openNav() {
+                    document.getElementById("mySidenav").style.width = "20rem";
+                    }
+                    function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    }
+                </script>
+                <aside id="mySidenav" class="sidenav">
+                <!--make this a UL, and wrap within an additional <nav> tag-->
+                <ul>
+                    <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>  
+                    <li><a href="index.html">Home</a></li>  
+                    <li><a href="description.html">Description</a></li>  
+                    <li><a href="history.html">History</a></li>  
+                    <li><a href="locations.html">Locations</a></li>    
+                </ul>    
+                </aside>
+                <!-- end laptop/mobile nav-->      
+            </aside>   
         </nav>
         <div class="page">
-            <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Home</a>
-            <a href="description.html">Description</a>
-            <a href="history.html">History</a>
-            <a href="locations.html">Locations</a>
-        </div>
-            <div class = "section slideshow"></div>
-            <div class ="section feature1">
-                <img src="assets/img/norfolk-island-10.jpg" alt="Looking towards soldier barracks and Commissariat Store">
+            <!--begin first section of content-->
+            <section class ="section feature1">
+                <!--Page Heading-->
+                <h2>Locations</h2>
                 <!--create subheading to introduce paragraph-->
-                <h2>
+                <h3>
                     The Pier Store
-                </h2>
+                </h3>
                 <!--create first paragraph-->
                 <p>
                     The Pier Store was built in 1825 as a commissariat store. It was built as a secure building because food, clothes and uniforms were stored there. Until about 1840 there was a boatshed attached at the western end.
@@ -115,8 +116,8 @@
                 <p>
                     ***
                 </p>
-            </div>
-            <div class ="section feature2">
+            </section>
+            <section class ="section feature2">
                 <h2>
                     The Royal Engineer's Office
                 </h2>
@@ -127,10 +128,10 @@
                     The Royal Engineer’s Office was built in 1850-1851. There was a stable for four horses built behind the Royal Engineer’s Office
                 </p>
                 <!--insert relevant image-->
-                <img src="assets/img/norfolk-island-15.jpg" alt="Royal Engineer’s Office">
+                <img src="assets/img/norfolk-island-15.jpg" alt="Shown is the Royal Engineer’s Office, with creme walls and faded terracotta roof tiles.">
 
-            </div>
-            <div class ="section feature3">
+            </section>
+            <section class ="section feature3">
                 <h3>
                     Its uses during the Second Settlement
                 </h3>
@@ -138,8 +139,9 @@
                     The Royal Engineers were responsible for the design of many of the Kingston buildings. They worked with the Foreman of Works to ensure the buildings were built correctly.
                     The Royal Engineers also designed the roads, seawall, drainage systems, underground sewers and the pier. The fact that the pier, roads and seawall are still in use today is a proper memorial to the excellence of their work.
                 </p>
-            </div>
-            <div class ="section feature4">
+                <img src="assets/img/norfolk-island-16.jpg" alt="A view of a rectangular yard with a pond in it and a stone wall around it. A house can be seen in the background.">
+            </section>
+            <section class ="section feature4">
                 <h3>
                     Its uses during the Third Settlement
                 </h3>
@@ -156,9 +158,10 @@
                 <p>
                     ***
                 </p>
-            </div>
+                <img src="assets/img/norfolk-island-28.jpg" alt="A close-up view of the engineer's office.It is a small hut-like building with creme coloured walls and a terracotta tiled roof.">
+            </section>
 
-            <div class ="section feature5">
+            <section class ="section feature5">
                 <h2>
                     Kingston Pier
                 </h2>
@@ -168,7 +171,7 @@
                 <p>
                     Work began on the pier in 1839 under the supervision of the Royal Engineer, Lieutenant Lugard. Building finished in 1849 but it was never completed to its original design. Much of the work was done by convicts who had committed additional offences on Norfolk Island. They often worked up to their waists in seawater, wearing heavy chains weighing up to 16kgs. They quarried rock from underwater and broke it up for use
                 </p>
-                <img class="pimgL" src="assets/img/norfolk-island-14.jpg" alt="Kingston Pier boatsheds">
+                <img class="pimgL" src="assets/img/norfolk-island-14.jpg" alt="Shown are the Kingston Pier boatsheds with the ocean on the left and clear, blue skies.">
 <h3>
 			Its uses during the First Settlement
 		</h3>
@@ -207,7 +210,7 @@
 		<p>
 			This building was built to replace the two commissariats that had been near the waterfront, and it was built in 1835. The stores near the pier had been damaged in a big flood and Colonel Anderson knew that he had to keep the stores safe. The building has three storeys, with a basement at ground level. 
 		</p>
-		<img class="pimgR" src="assets/img/norfolk-island-11.jpg" alt="Commissariat store">
+		<img class="pimgR" src="assets/img/norfolk-island-11.jpg" alt="This is the Commissariat store, a large triple story brick building with a stone wall around it.">
 		<h3>
 			Its use today
 		</h3>
@@ -228,7 +231,7 @@
 		<p>
 			During the first years of the First Settlement convicts lived in small wooden huts along the seafront and flatlands but later a gaol was needed to house wrongdoers. A stone gaol was built near the shore and is known as The Old Gaol. It was destroyed before the First Settlement was abandoned in 1814.
 		</p>
-		<img class="pimgL" src="assets/img/norfolk-island-21.jpg" alt="Gaol wall">
+		<img class="pimgL" src="assets/img/norfolk-island-21.jpg" alt="Here, is pictured the Gaol wall. You can see a tall wall with two faces showing, and the clear blue sky above and the grass floor covering.">
 		<h3>
 			Its uses during the Second Settlement
 		</h3>
@@ -248,10 +251,11 @@
 		<p>
 			The Old Gaol is a ruin with only a few rocks visible on the land on the beachfront. The New Gaol is a ruin but parts of the complex are now used for performances. 
 		</p>
+        <br>
 		<p>
 			***
 		</p>
-
+        <br>
 		<h2>
 			Longridge
 		</h2>
@@ -273,10 +277,10 @@
 		<p>
 			Much of the Longridge area is now used for farming and houses have been built in the area. The Arches remain from the Second Settlement buildings at Longridge. Unfortunately its use and history are unknown. 
 		</p>
-            </div>
+            </section>
         </div>
         <footer>
-            <p>Nicholas Villiers 2019</p>
+            <p>Nicholas Villiers 2019 <a HREF="#top" class="top">Back To Top</a> </p>
         </footer>
     </body>
 </html>

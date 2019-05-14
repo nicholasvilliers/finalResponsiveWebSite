@@ -1,103 +1,103 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
     <head>
         <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, intial-scale=1.0, maximum-scale=1.0">
-        <title>Norfolk Island - Home</title>
+        <title>Norfolk Island - History</title>
         <link rel="stylesheet" href="assets/styles/reset.css"/>
         <link rel="stylesheet" href="assets/styles/styles.css"/>
+        <!--The following stylesheet is the stylesheeet to embed the fonts, which I have chosen to use for this website.-->
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet"> 
     </head>
     <body>
         <header>    
         </header>
         <nav>
-            <div class="menu">
-                <ul class="DESKTOP">
+            <div class="DESKTOP">
+                <section class="social">
+                    <h1>Norfolk Island - History</h1>
+                    <!--Begin menu links-->
+                    <ul>
                         <li>
-                            <a href="index.html">
-                                <figure>
-                                    <img alt="kingston pier" src="assets/img/norfolk-island-6.jpg">
-                                    <figcaption>Home</figcaption>
-                                </figure>
-                            </a>
+                            <a href="https://www.facebook.com/2899NorfolkIsland/"><img src="assets/img/Facebook%20icon%2002.png" alt="The logo for facebook"></a>
                         </li>
                         <li>
-                            <a href="description.html">
-                                <figure>
-                                    <img alt="Emily Bay - General" src="assets/img/norfolk-island-7.jpg">
-                                    <figcaption>Description</figcaption>
-                                </figure>
-                            </a>
+                            <a href="https://www.instagram.com/norfolk.island/"><img src="assets/img/instagram%20icon.png" alt="The logo for instagram."></a>
                         </li>
                         <li>
-                            <a href="history.html">                           
-                                <figure>
-                                    <img alt="Cemetary" src="assets/img/norfolk-island-9.jpg">
-                                    <figcaption>History</figcaption>
-                                </figure>
-                            </a>                        
+                            <a href="https://www.youtube.com/user/norfolkislandtourism"><img src="assets/img/1024px-Youtube_icon.svg.png" alt="The logo for youtube."></a>
                         </li>
                         <li>
-                            <a href="locations.html">
-                                <figure>
-                                    <img  alt="Looking towards soldier barracks and Commissariat Store - general" src="assets/img/norfolk-island-10.jpg">           <figcaption>Locations</figcaption>
-                                </figure>
-                            </a>
+                            <a href="https://twitter.com/norfolkisland"><img src="assets/img/twitter%20icon.png" alt="The logo for twitter."></a>
                         </li>
                     </ul>
-                <div class="LPTPMBL">
-                    <!-- start laptop/mobile nav-->
-                    <div class="title">
-                        <button id="trigger" class onclick="openNav()">&#9776;</button>
-                        <h1 class="norfolkIsland">Norfolk Island - </h1><h1>History</h1>
-                        <img alt="Norfolk Island Flag" class ="logo" src="assets/img/150px-Flag_of_Norfolk_Island.png">
-                    </div>
-                    <script>
-                        function openNav() {
-                        document.getElementById("mySidenav").style.width = "20rem";
-                        }
-                        function closeNav() {
-                        document.getElementById("mySidenav").style.width = "0";
-                        }
-                    </script>
-                    <div id="mySidenav" class="sidenav">
-                    <!--make this a UL, and wrap within an additional <nav> tag-->
-                    <ul>
-                        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>  
-                        <li><a href="index.html">Home</a></li>  
-                        <li><a href="description.html">Description</a></li>  
-                        <li><a href="history.html">History</a></li>  
-                        <li><a href="locations.html">Locations</a></li>    
-                    </ul>    
-                    </div>
-                    <!-- end laptop/mobile nav-->      
+                </section>
+                <!--The next section serves solely to provide an image for the nav menu-->
+                <div class="mainImage">
+                    <img src="assets/img/norfolk-island-27.jpg" alt="a wide panoramic view of the Norfolk coastline, looking out from a boardwalk."> 
                 </div>
-            </div>    
+                <section class="menu">
+                <ul>
+                    <li>
+                        <h2><a href="index.html">Home</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="description.html">Description</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="history.html">History</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="locations.html">Locations</a></h2>
+                    </li>                         
+                </ul> 
+                </section>
+            </div>            
+            <aside class="LPTPMBL">
+                <!-- start laptop/mobile nav-->
+                <section class="title">
+                <button id="trigger" class onclick="openNav()">&#9776;</button>
+                    <h2 class="norfolkIsland">Norfolk Island - </h2><h2>History</h2>
+                    <img alt="Shown is the Norfolk Island Flag" class ="logo" src="assets/img/150px-Flag_of_Norfolk_Island.png">
+                </section>
+                <script>
+                    function openNav() {
+                    document.getElementById("mySidenav").style.width = "20rem";
+                    }
+                    function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    }
+                </script>
+                <aside id="mySidenav" class="sidenav">
+                <!--make this a UL, and wrap within an additional <nav> tag-->
+                <ul>
+                    <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>  
+                    <li><a href="index.html">Home</a></li>  
+                    <li><a href="description.html">Description</a></li>  
+                    <li><a href="history.html">History</a></li>  
+                    <li><a href="locations.html">Locations</a></li>    
+                </ul>    
+                </aside>
+                <!-- end laptop/mobile nav-->      
+            </aside>   
         </nav>
         <div class="page">
-            <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Home</a>
-            <a href="description.html">Description</a>
-            <a href="history.html">History</a>
-            <a href="locations.html">Locations</a>
-        </div>
-            <div class = "section slideshow"></div>
-            <div class ="section feature1">
+            <section class ="section feature1">
                 <!--insert image relevant to first paragraph-->
-                <img class="pimg" src="assets/img/norfolk-island-9.jpg" alt="Cemetary">
-                <h2>Early Polynesian presence</h2>
+                <img class="pimg" src="assets/img/norfolk-island-19.jpg" alt="A grave stone which reads 'In memory of HNY Knowls who was executed on the 22nd of september 1834 aged 29 years'" >
+                <!--Page Heading-->
+                <h2>History</h2>
+                <h3>Early Polynesian presence</h3>
                 <!--create first paragraph-->
                 <p>
                     Europeans were not the first people to inhabit Norfolk Island. Stone tools have been found at both Emily and Slaughter bays within KAVHA. Archaeological investigations have revealed evidence of landscape modifications in the Emily Bay area including artefact assemblages and structural remains that have been interpreted as a rudimentary marae, a religious structure characteristic of East Polynesian culture. Radiocarbon dating indicates Polynesian settlement of the area occurred between AD 1200 and AD 1600.
                 </p>
-            </div>
-            <div class ="section feature2">
+            </section>
+            <section class ="section feature2">
                 <h2>
                     The first European settlement
                 </h2>
                 <p>
-                    Discovered by Captain James Cook RN in 1774, Norfolk Island was settled on 6 March 1788, six weeks after the First Fleet landed in Sydney. Cook reported the island had rich soils, tall pines suitable for ships masts and spars, and native flax that could be used for making canvas. Governor Philip had instructions to settle and secure the island as soon as possible to secure its potential naval supplies.
+                    Discovered by Captain James Cook RN in 1774, Norfolk Island was settled on 6 March 1788. Cook reported the island had rich soils, tall pines suitable for ships masts and spars, and native flax that could be used for making canvas. Governor Philip had instructions to settle and secure the island as soon as possible to secure its potential naval supplies.
                 </p>
                 <p>
                     Arriving on the Supply, Lieutenant Philip Gidley King RN and a party of nine male and six female convicts and seven staff established a settlement named Kingston. Crops were sown in the adjoining valley, Arthurs Vale, and, unlike the experience in Sydney, the Kingston crops flourished. To relieve the food pressures in the infant colony of New South Wales, Governor Philip relocated around one-third Sydney's population to Kingston.
@@ -105,9 +105,9 @@
                 <p>
                     Extensive clearing followed and both convicts and free settlers farmed small holdings of land. The rising land behind Kingston was cleared for surveillance and to ensure there was no cover for escaping convicts. The first settlement's population peaked at 1156 in May 1792. By 1804 the free settlers on the island significantly outnumbered the convicts who represented 23 percent of the total population of 1084. On its abandonment in 1814 the settlement's buildings were destroyed.
                 </p>
-                <img class="pimg" src="assets/img/norfolk-island-1.jpg" alt="Gaol">
-            </div>
-            <div class ="section feature3">
+                <img class="pimg" src="assets/img/norfolk-island-1.jpg" alt="The image overlooks the Gaol, with many other buildings visible also.">
+            </section>
+            <section class ="section feature3">
                 <h2>
                     The second settlement
                 </h2>
@@ -120,21 +120,22 @@
                 <p>
                     The second settlement on Norfolk Island was designed to be the extreme in convict degradation and the came to stand for worst of the transportation system.
                 </p>
-                <img class="pimg" src="assets/img/norfolk-island-4.jpg" alt="Main street - general">
-            </div>
-            <div class ="section feature4">
+                <img class="pimg" src="assets/img/norfolk-island-13.jpg" alt="A close-up shot of the gaol wall, you can see the window holes and the terracotta tiles on the roof.">
+            </section>
+            <section class ="section feature4">
                 <h2>
                     Third settlement
                 </h2>
                 <p>
                     As the Pitcairn Island descendents of the Bounty mutineers had outgrown their island home, the British government chose to resettle them on Norfolk Island. The whole Pitcairn community landed at Kingston Pier on 8 June 1856.
                 </p>
+                <img src="assets/img/norfolk-island-12.jpg" alt="The commisariat store, a large stone building with a wall surraounding it">
                 <p>
                     Their descendents, who today comprise nearly a third of Norfolk Island's population, still speak the Pitcairn language. For them KAVHA is a place of special significance because it has been continually and actively used since their arrival as a place of residence, work, worship and recreation. KAVHA is uncommon as a place where a distinctive Polynesian/European community has lived and practised their cultural traditions for over 150 years.
                 </p>
-                <img class="pimg" src="assets/img/norfolk-island-17.jpg" alt="House on main street Kingston - general">
-            </div>
-            <div class ="section feature5">
+                <img class="pimg" src="assets/img/norfolk-island-17.jpg" alt="Shown is a beautiful house on the main street of kingston, with beautiful mustard walls and white trimmings on the windows.">
+            </section>
+            <section class ="section feature5">
                 <h2>KAVHA's major buildings include:</h2>
                 <!--the following paragraphb consists of an unordered list to arrange points given on the original documentation-->
                     <!--create unordered list-->
@@ -163,7 +164,7 @@
                 <p>
                     Other archaeological remains include the blacksmith's shop (1846), lumber yard, water mill, the crankmill (1827-38), the remains of the only known human powered crankmill built in Australia before 1850, the salt house (1847), the windmill base (1842-43), lime kilns; the landing pier (1839-47) and sea wall, two of the earliest remaining large scale engineering works in Australia. The role of religion in reform is evident in the Protestant and Catholic clergyman's quarters.
                 </p>            
-                <img class="pimgR" src="assets/img/norfolk-island-16.jpg" alt="Looking towards hospital from Jail grounds - general">
+                <img class="pimgR" src="assets/img/norfolk-island-16.jpg" alt="The image shows the view looking towards hospital from Jail grounds.There is a small pond surrounded by a stone wall in the foreground, with the gaol in the background.">
                 <h2>Hell on earth</h2>
                 <p>
                     Convicts worked from sunrise to sunset. Agricultural work was done with hoes and spades, and no ploughs or working cattle were used. Convict accommodation was cramped and unsanitary and this, combined with their poor diet of one meal every 48 hours, resulted in poor health and many deaths. The harshness and degradation of the treatment metered out to the convicts was intended to break them. Floggings were common, even for trivial offences, and sentences could be extended.
@@ -177,7 +178,7 @@
                 <p>
                     A number of the commandants, including Captain James Morisset, Major Joseph Childs and John Price, were particularly cruel. Mutinies and uprisings were not uncommon and invariably led to floggings and hangings. It was during Morisset's period as commandant (1829-34), which was noted for his extensive use of the lash, that Norfolk Island became renowned as 'hell on earth' and by 1833 the island's fearsome reputation was well known in Britain.
                 </p>
-                <img class="pimgL" src="assets/img/norfolk-island-1.jpg" alt="The old jail Kingston">
+                <img class="pimgL" src="assets/img/norfolk-island-1.jpg" alt="Shown is a birds-eye view of the gaol. Other buidlings are visible in the background.">
                 <h2>A new prison philosophy</h2>
                 <p>
                     Only one commandant of Norfolk Island, Alexander Maconochie, brought a humanising regime of reform to the second settlement period through four of its 30 years. He introduced the Merits System of Penal Discipline, which worked on the principle that the prisoner could secure freedom if they were industrious and well behaved. For a number of reasons, including the fact that his superiors disapproved of his reformist actions, his reforms failed. Under Maconochie's humanitarian influence the conditions for prisoners had improved. They rapidly deteriorated, however, under the next commandant, Major Joseph Childs.
@@ -186,10 +187,10 @@
                 <p>
                     The latter stages of the second settlement saw prisoners arriving direct from Britain to serve the first stage of their punishment under the new probation system introduced in 1843. The severity of the place continued and in his report to the British Parliament in 1847, Catholic Bishop Robert Wilson detailed the appalling conditions on Norfolk Island. His report helped bring an end to the island's use as a penal settlement. It was gradually closed between 1847 and 1855 with some convicts having been released on tickets of leave, while others were taken to Port Arthur where they served out their sentences. An Order in Council made on 29 December 1853, repealed all previous orders making Norfolk Island a penal settlement. A small party remained on the island to care for the farms and livestock and to handover to the incoming settlers from Pitcairn Island, who constituted the third settlement phase of the island's history.
                 </p>
-            </div>
+            </section>
         </div>
         <footer>
-            <p>Nicholas Villiers 2019</p>
+            <p>Nicholas Villiers 2019 <a HREF="#top" class="top">Back To Top</a> </p>
         </footer>
     </body>
 </html>

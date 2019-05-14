@@ -1,56 +1,64 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
     <head>
         <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, intial-scale=1.0, maximum-scale=1.0">
         <title>Norfolk Island - Home</title>
         <link rel="stylesheet" href="assets/styles/reset.css"/>
         <link rel="stylesheet" href="assets/styles/styles.css"/>
+        <!--The following stylesheet is the stylesheeet to embed the fonts, which I have chosen to use for this website.-->
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet"> 
     </head>
     <body>
         <header>    
         </header>
         <nav>
-            <ul class="DESKTOP">
-                <li>
-                            <a href="index.html">
-                                <figure>
-                                    <img alt="kingston pier" src="assets/img/norfolk-island-6.jpg">
-                                    <figcaption>Home</figcaption>
-                                </figure>
-                            </a>
+            <div class="DESKTOP">
+                <section class="social">
+                    <h1>Norfolk Island - Home</h1>
+                    <!--Begin menu links-->
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/2899NorfolkIsland/"><img src="assets/img/Facebook%20icon%2002.png" alt="The logo for facebook"></a>
                         </li>
-                <li>
-                            <a href="description.html">
-                                <figure>
-                                    <img alt="Emily Bay - General" src="assets/img/norfolk-island-7.jpg">
-                                    <figcaption>Description</figcaption>
-                                </figure>
-                            </a>
+                        <li>
+                            <a href="https://www.instagram.com/norfolk.island/"><img src="assets/img/instagram%20icon.png" alt="The logo for instagram."></a>
                         </li>
-                <li>
-                            <a href="history.html">                           
-                                <figure>
-                                    <img alt="Cemetary" src="assets/img/norfolk-island-9.jpg">
-                                    <figcaption>History</figcaption>
-                                </figure>
-                            </a>                        
+                        <li>
+                            <a href="https://www.youtube.com/user/norfolkislandtourism"><img src="assets/img/1024px-Youtube_icon.svg.png" alt="The logo for youtube."></a>
                         </li>
-                <li>
-                            <a href="locations.html">
-                                <figure>
-                                    <img  alt="Looking towards soldier barracks and Commissariat Store - general" src="assets/img/norfolk-island-10.jpg">           <figcaption>Locations</figcaption>
-                                </figure>
-                            </a>
+                        <li>
+                            <a href="https://twitter.com/norfolkisland"><img src="assets/img/twitter%20icon.png" alt="The logo for twitter."></a>
                         </li>
-            </ul>
-            <div class="LPTPMBL">
+                    </ul>
+                </section>
+                <!--The next section serves solely to provide an image for the nav menu-->
+                <div class="mainImage">
+                    <img src="assets/img/norfolk-island-27.jpg" alt="A wide panoramic view of the Norfolk coastline, looking out from a boardwalk."> 
+                </div>
+                <section class="menu">
+                <ul>
+                    <li>
+                        <h2><a href="index.html">Home</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="description.html">Description</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="history.html">History</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="locations.html">Locations</a></h2>
+                    </li>                         
+                </ul> 
+                </section>
+            </div>
+            <aside class="LPTPMBL">
                     <!-- start laptop/mobile nav-->
-                    <div class="title">
+                    <section class="title">
                         <button id="trigger" class onclick="openNav()">&#9776;</button>
-                        <h1 class="norfolkIsland">Norfolk Island - </h1><h1>Home</h1>
-                        <img alt="Norfolk Island Flag" class ="logo" src="assets/img/150px-Flag_of_Norfolk_Island.png">
-                    </div>
+                        <h2 class="norfolkIsland">Norfolk Island - </h2><h2>Home</h2>
+                        <img alt="Picture is the flag of Norfolk island" class ="logo" src="assets/img/150px-Flag_of_Norfolk_Island.png">
+                    </section>
                     <script>
                         function openNav() {
                         document.getElementById("mySidenav").style.width = "20rem";
@@ -59,7 +67,7 @@
                         document.getElementById("mySidenav").style.width = "0";
                         }
                     </script>
-                    <div id="mySidenav" class="sidenav">
+                    <aside id="mySidenav" class="sidenav">
                     <!--make this a UL, and wrap within an additional <nav> tag-->
                     <ul>
                         <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>  
@@ -68,35 +76,41 @@
                         <li><a href="history.html">History</a></li>  
                         <li><a href="locations.html">Locations</a></li>    
                     </ul>    
-                    </div>
+                    </aside>
                     <!-- end laptop/mobile nav-->      
-                </div>
+            </aside>
         </nav>
         <div class="page">
-            <div class ="section feature1">
-                <img class="pimg" alt="Kingston Pier" class="pimg" src="assets/img/norfolk-island-6.jpg">
+            <section class ="section feature1">
+                <img class="pimg" alt="Pictured is a detailed schematic drawing of kingston pier drawn on paper." src="assets/img/norfolk-island-5.jpg">
                 <h2>Introduction</h2>
                 <p>
                 The Kingston and Arthurs vale Historic Area (KAvHA) is of outstanding significance to the nation as a convict settlement spanning the era of transportation to eastern Australia between 1788 and 1855. Europeans were not the rst people to inhabit Norfolk island. Stone tools found at both Emily and Slaughter Bays within KAvHA indicate that Polynesian settlement of the area occurred between AD 1200 and AD 1600. visited by Captain James Cook RN in 1774, Norfolk island was settled on 6 March 1788, six weeks after the First Fleet landed in Sydney. A settlement was established at Kingston, with crops sown in the adjoining valley, Arthurs vale. To relieve the food pressures in the infant colony of New South Wales, Governor Philip relocated around one-third of Sydney's population to Kingston. 
                 </p>
-                </div>
-            <div class ="section feature2">
-                    <img alt="Looking towards jail - general" class="pimg" src="assets/img/norfolk-island-21.jpg">
+                <img class="dynamicImage" src="assets/img/norfolk-island-12.jpg" alt="A high angle shot shot over the gaol, with the coastline and beach in the background.">
+                </section>
+            <section class ="section feature2">
+                    <h2>Buildings</h2>
+                    <img alt="Pictured is the view looking towards gaol, overlooking the gaol wall, with people congregated on the grass field in front." class="pimg" src="assets/img/norfolk-island-3.jpg">
                     <p>
-                    Both convicts and free settlers farmed small holdings of land. The rst settlement's population peaked at 1156 in May 1792. By 1804, the free settlers on the island signi cantly outnumbered the convicts who represented 23 per cent of the total population of 1084. Abandoned in 1814, the settlement's buildings were destroyed. in 1825, the island was re-occupied to provide secondary punishment of convicts. Secondary punishment was designed to revive the fear of transportation and deter crime in Britain and the colonies. it was a sentence applied to transported convicts who re-offended in the colony. 
+                    Both convicts and free settlers farmed small holdings of land. The rst settlement's population peaked at 1156 in May 1792. By 1804, the free settlers on the island signi cantly outnumbered the convicts who represented 23 per cent of the total population of 1084.</p>
+                    <img src="assets/img/norfolk-island-2.jpg" alt="A brick bridge which passes through a forest along a dirt road, over a dry creek-bed">
+                    <p>Abandoned in 1814, the settlement's buildings were destroyed. in 1825, the island was re-occupied to provide secondary punishment of convicts. Secondary punishment was designed to revive the fear of transportation and deter crime in Britain and the colonies. it was a sentence applied to transported convicts who re-offended in the colony. 
                     </p>
-                </div>
-            <div class ="section feature3">
-                    <img alt="Gaol wall" class="pimg" src="assets/img/norfolk-island-13.jpg">
+            </section>
+            <section class ="section feature3">
+                    <h2>KAVHA</h2>
+                    <img alt="This is a close-up view from the gaol wall. You can see the window holes in the wall and the slate troof tiles on top." class="pimg" src="assets/img/norfolk-island-13.jpg">
                     <p>
-                    KAvHA developed a reputation as one of the harshest and cruelest of Australia's penal settlements. The worst of the convict population from both New South Wales and van Diemen's Land were sent to Norfolk island. They were men who had become so brutalised by the system that ever increasing levels of punishment only served to make them more recalcitrant. 
+                    KAVHA developed a reputation as one of the harshest and cruelest of Australia's penal settlements. The worst of the convict population from both New South Wales and van Diemen's Land were sent to Norfolk island. They were men who had become so brutalised by the system that ever increasing levels of punishment only served to make them more recalcitrant. 
                     </p>
                     <p>
                     Alexander Maconochie, commandant of Norfolk island, brought a humanising regime of reform to the second settlement period for four of its 30 years. He introduced the Merits System of Penal Discipline, which worked on the principle that the prisoner could secure freedom if they were industrious and well-behaved. For a number of reasons, including the fact that his superiors disapproved of his reformist actions, his initiatives failed. 
                     </p>
-                </div>
-            <div class ="section feature4">
-                    <img alt="Kingston Pier boatsheds" class="pimg" src="assets/img/norfolk-island-14.jpg">
+            </section>
+            <section class ="section feature4">
+                    <h2>Kingston Boatsheds</h2>
+                    <img alt="A view of the kingston boatsheds, by the ocean, with clear blue skys." class="pimg" src="assets/img/norfolk-island-14.jpg">
                     <p>
                     The latter stages of the second settlement saw prisoners arriving direct from Britain to serve the rst stage of their punishment under the new probation system introduced in 1843. The severity of the place continued and a critical report to the British Parliament helped bring an end to the island's use as a penal settlement. it was gradually closed between 1847 and 1855. 
                     </p>
@@ -106,10 +120,10 @@
                     <p>
                     Their descendents, who today comprise nearly a third of Norfolk island's population, still speak the Pitcairn language. 
                     </p>
-                </div>
+            </section>
         </div>
         <footer>
-            <p>Nicholas Villiers 2019</p>
+            <p>Nicholas Villiers 2019 <a HREF="#top" class="top">Back To Top</a> </p>
         </footer>
     </body>
 </html>
